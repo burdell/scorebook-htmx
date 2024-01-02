@@ -1,0 +1,12 @@
+.list-item {
+  font-size: 1rem;
+  transition: 0.2s ease-in-out all;
+  padding: 1rem;
+  display: block;
+  background-color: var(--white9);
+  border-radius: 10px;
+}
+
+.list-item:hover {
+  background-color: var(--gray8);
+}

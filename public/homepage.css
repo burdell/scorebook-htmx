@@ -1,0 +1,18 @@
+.homepage .list-name {
+  font-size: 1.3rem;
+}
+
+.homepage .list-description {
+  font-size: var(--listItemDescription);
+  color: var(--gray3);
+}
+
+.homepage a {
+  text-decoration: none;
+}
+
+.homepage .item-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}

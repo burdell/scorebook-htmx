@@ -1,0 +1,38 @@
+.content-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .content-container {
+    width: 90%;
+  }
+}
+
+.content-page {
+  padding-top: 1rem;
+}
+
+.content {
+  background-color: var(--white9);
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px hsl(215, 55%, 15%), -2px 2px 3px hsl(215, 55%, 15%);
+}
+
+.no-title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content-wrapper {
+  margin-bottom: 1rem;
+}
+
+.list-title {
+  color: var(--primary2);
+  font-size: 1.3rem;
+  background-color: var(--gray9);
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+}

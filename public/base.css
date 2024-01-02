@@ -1,0 +1,144 @@
+:root {
+  --primary1: hsl(215, 55%, 20%);
+  --primary2: hsl(215, 60%, 28%);
+  --primary3: hsl(215, 62%, 32%);
+  --primary4: hsl(215, 64%, 38%);
+  --primary5: hsl(215, 64%, 46%);
+  --primary6: hsl(215, 62%, 55%);
+  --primary7: hsl(215, 62%, 71%);
+  --primary8: hsl(215, 60%, 86%);
+  --primary9: hsl(215, 55%, 98%);
+  --secondary1: hsl(91, 38%, 35%);
+  --secondary2: hsl(91, 39%, 38%);
+  --secondary3: hsl(91, 40%, 40%);
+  --secondary4: hsl(91, 42%, 44%);
+  --secondary5: hsl(91, 42%, 53%);
+  --secondary6: hsl(91, 40%, 65%);
+  --secondary7: hsl(91, 38%, 72%);
+  --secondary8: hsl(91, 39%, 90%);
+  --secondary9: hsl(91, 36%, 92%);
+  --tertiary1: hsl(0, 72%, 22%);
+  --tertiary2: hsl(0, 72%, 33%);
+  --tertiary3: hsl(0, 73%, 40%);
+  --tertiary4: hsl(0, 74%, 48%);
+  --tertiary5: hsl(0, 75%, 56%);
+  --tertiary6: hsl(0, 75%, 65%);
+  --tertiary7: hsl(0, 73%, 70%);
+  --tertiary8: hsl(0, 73%, 82%);
+  --tertiary9: hsl(0, 72%, 92%);
+  --white1: hsl(54, 57%, 87%);
+  --white3: hsl(52, 62%, 90%);
+  --white5: hsl(54, 65%, 92%);
+  --white7: hsl(54, 62%, 95%);
+  --white9: hsl(54, 52%, 98%);
+  --gray1: hsl(209, 10%, 32%);
+  --gray2: hsl(207, 15%, 52%);
+  --gray3: hsl(208, 15%, 58%);
+  --gray4: hsl(210, 16%, 76%);
+  --gray5: hsl(208, 21%, 88%);
+  --gray6: hsl(209, 15%, 90%);
+  --gray7: hsl(207, 12%, 92%);
+  --gray8: hsl(208, 12%, 94%);
+  --gray9: hsl(210, 16%, 97%);
+}
+
+:root {
+  --nav-offset: 3.4rem;
+  --borderRadius: 10px;
+  --gridColor: var(--gray4);
+  --minGrid: 6rem;
+  --listItemTitle: 1.2rem;
+  --listItemDescription: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%;
+  background: url("/public/baseball.svg");
+  background-color: var(--primary1);
+  background-attachment: fixed;
+}
+
+main {
+  margin-top: var(--nav-offset);
+  color: var(--gray1);
+  padding-bottom: 0.2rem;
+}
+
+/* NAV */
+nav {
+  border-bottom: 1px solid var(--gray7);
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  color: var(--tertiary4);
+  background-color: var(--white9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+  height: var(--nav-offset);
+}
+
+nav [aria-current] {
+  position: relative;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+}
+
+nav .site-title {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  font-family: "Arvo", serif;
+}
+
+nav .links {
+  margin-left: 1.5rem;
+}
+
+nav .links a {
+  padding-top: 0.5rem;
+  color: var(--primary3);
+  font-size: 1rem;
+  transition: 0.2s all ease-in-out;
+}
+
+nav .links a:hover {
+  color: var(--primary5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  color: inherit;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  html {
+    font-size: 12px;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+}
